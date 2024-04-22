@@ -1,4 +1,3 @@
-import numpy as np
 import copy
 import random
 
@@ -60,7 +59,6 @@ class GeneticAlgorithm:
                 individual.col = col
 
             self.population.sort(key=lambda x: x.fitness, reverse=True)
-            # print("Generation:", generation, "Best Fitness:", self.population[0].fitness)
             if self.population[0].fitness >= threshold_fitness:
                 best_fitness = self.population[0].fitness
                 best_choice = self.population[0].row, self.population[0].col
@@ -131,17 +129,16 @@ def evaluate_window(window, opponent_num, window_type=None):
         player_num = 1
     score = 0
     if window.count(opponent_num) == 3 and window.count(0) == 1:
-        score -= 100  # Opponent has 3 pieces with an empty space
+        score -= 100
         if window_type: score -= 100
     elif window.count(opponent_num) == 2 and window.count(0) == 2:
-        score -= 10  # Opponent has 2 pieces with 2 empty spaces
+        score -= 10
     if window.count(player_num) == 3 and window.count(0) == 1:
-        score += 100  # Player has 3 pieces with an empty space
+        score += 100
         if window_type: score += 100
     elif window.count(player_num) == 2 and window.count(0) == 2:
-        score += 10  # Player has 2 pieces with 2 empty spaces
+        score += 10
     return score
-
 
 
 # population_size = 28
