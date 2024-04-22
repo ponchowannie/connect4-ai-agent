@@ -1,6 +1,5 @@
 import random
 import math
-import copy
 from utility import *
 from bfs_winning_move import *
 from genetic_algorithm_bomb import GeneticAlgorithm, fitness_function
