@@ -9,6 +9,13 @@ Each AI player uses a combination of algorithms including minimax with alpha-bet
 pip install pipenv
 pipenv --python 3.10 install
 pipenv install
+```
+
+### To Run
+
+```cmd
 pipenv shell
 python final_project/main.py
 ```
+### Link to document for game details
+https://docs.google.com/document/d/1YctKJYr4jzUVjtVytMeiC6A-xFG40Z1fSRM7yo25TAs/edit?usp=sharing

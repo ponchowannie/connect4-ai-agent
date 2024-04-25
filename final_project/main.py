@@ -32,6 +32,7 @@ board = gen_blocked_space(board, 2)
 print("\n\n")
 print_board(board)
 
+# # #   G A M E    P L A Y I N G   # # # 
 while not game_over:
     itr += 1
     print("."*itr)
