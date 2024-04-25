@@ -19,3 +19,6 @@ python final_project/main.py
 ```
 ### Link to document for game details
 https://docs.google.com/document/d/1YctKJYr4jzUVjtVytMeiC6A-xFG40Z1fSRM7yo25TAs/edit?usp=sharing
+
+### Link to Github Repository
+https://github.com/ponchowannie/connect4-ai-agent
